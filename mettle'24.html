@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <title>METTLE 2024</title>
+    <link rel="stylesheet" type="text/css" href="mettle'24.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #000;">
+        <a class="navbar-brand" href="#">
+            <img src = "mettlelogo.png" class = "logo"/>
+        </a>
+        <button class="navbar-toggler ml-auto " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon line"></span> 
+        <span class="navbar-toggler-icon line"></span> 
+        <span class="navbar-toggler-icon line"></span> 
+        </button>
+        <div>
+            
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Workshops</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">Contact Us</a>
+              </li>
+          </ul>
+          
+        </div>
+        
+        
+        
+      </nav>
+      
+      
+        <div class = "box ">
+            <div class = "main_heading gradient">
+                <div class = "mettle">
+                    <h1 class = "heading">METTLE 2024</h1>
+                    <p class = "content">Redefining Realities: Matrix</p>
+                </div>
+            </div>
+
+            <div class = "explore d-flex flex-row justify-content-center">
+                <hr>
+                <button class = "explore_button">explore</button>
+                <hr>
+                <!-- <img src = "explore (1).png" class = "explorelogo"/> -->
+      
+              </div>
+              
+              <div class = "countDown">
+                <h1 class = "countDownHeading">COUNTDOWN</h1>
+                <div class="countdown-container">
+                    <div>
+                        <div class = "timebox d-flex flex-row">
+                            <span id="days1">2</span><span id="days2">7</span>
+                        </div>
+                        
+                        
+                        <label>Days</label>
+                    </div>
+                    <span class="separator">:</span>
+                    <div>
+                        <div class = "timebox d-flex flex-row">
+                            <span id="hours1">0</span><span id="hours2">9</span>
+                        </div>
+                        
+                        <label>Hours</label>
+                    </div>
+                    <span class="separator">:</span>
+                    <div>
+                        <div class = "timebox d-flex flex-row">
+                            <span id="minutes1">3</span><span id="minutes2">1</span>
+                        </div>
+                        
+                        <label>Minutes</label>
+                    </div>
+                    <span class="separator">:</span>
+                    <div>
+                        <div class = "timebox d-flex flex-row">
+                            <span id="seconds1">4</span><span id="seconds2">8</span>
+                        </div>
+                        
+                        <label>Seconds</label>
+                    </div>
+                </div>
+                <div>
+                    <button class = "registerbutton">Register for Mettle ‘24</button>
+                </div>
+    </div>
+
+              
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    
+
+    <script>
+
+        //navbar animation
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 50) { 
+                    $('.navbar').addClass('navbar-scrolled');
+                } else {
+                    $('.navbar').removeClass('navbar-scrolled');
+                }
+            });
+        });
+
+        //count down time
+
+        var countDownDate = new Date("Mar 19, 2024 15:37:25").getTime();
+        var countdownfunction = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days1").innerHTML = Math.floor(days / 10);
+            document.getElementById("days2").innerHTML = days % 10;
+            document.getElementById("hours1").innerHTML = Math.floor(hours / 10);
+            document.getElementById("hours2").innerHTML = hours % 10;
+            document.getElementById("minutes1").innerHTML = Math.floor(minutes / 10);
+            document.getElementById("minutes2").innerHTML = minutes % 10;
+            document.getElementById("seconds1").innerHTML = Math.floor(seconds / 10);
+            document.getElementById("seconds2").innerHTML = seconds % 10;
+
+            if (distance < 0) {
+                clearInterval(countdownfunction);
+                document.getElementById("demo").innerHTML = "METTLE'24 IS LIVE";
+            }
+        }, 1000);
+
+
+        
+        
+    </script>
+
+    
+</body>
+</html>
