@@ -17,25 +17,27 @@
     }
     
      
+/* Reset default anchor link styles */
 a {
     text-decoration: none;
     color: inherit;
 }
 
- 
+/* Base styles for navigation items */
 .nav-item {
     display: inline-block;
     position: relative;
-    font-weight: 600;  
-    padding: 0.5rem 1rem;  
+    font-weight: 600; /* Added for bolder text */
+    padding: 0.5rem 1rem; /* Adjusted padding for better spacing */
 }
 
 /* Base hover styles for navigation items */
 .nav-item:hover {
-    color: goldenrod; 
-    background-color: rgba(255, 255, 255, 0.1); 
+    color: #E53948; /* Consistent color from prompt */
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle background hover effect */
+}
 
-
+/* Underline for navigation items when hovered */
 .nav-item:after {
     content: '';
     position: absolute;
@@ -43,27 +45,17 @@ a {
     height: 2px;
     bottom: 0;
     left: 0;
-    background: linear-gradient(
-					0deg,
-					#fff0da 1.04%,
-					#94641e 4.17%,
-					#fff2db 82.81%,
-					#eac885 93.75%,
-					#fbf5d1 97.92%,
-					#bd9a4b 99.99%,
-					#ecd8a3 100%
-				);
-    opacity: 0; 
-    transition: all 0.25s ease-out; 
+    background-color: #FCF0D1; /* Consistent color from prompt */
+    opacity: 0; /* Start hidden */
+    transition: all 0.25s ease-out; /* Animate all properties (color, opacity, transform) */
 }
 
-
+/* Apply the underline and visual transition when hovered */
 .nav-item:hover:after {
-    opacity: 1; 
-    transform: translateY(5px) scaleY(1.5); 
+    opacity: 1; /* Make underline visible on hover */
+    transform: translateY(5px) scaleY(1.5); /* Slide down and slightly expand for emphasis */
 }
 
-    }
 
 .navbar-nav .nav-link {
     color: rgba(255, 255, 255, 0.87) !important;
