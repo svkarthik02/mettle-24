@@ -148,7 +148,7 @@
 
 
 
-                <!-- sponsers -->
+                <!-- offers -->
 
 
                 <div class="title-container">COMBOS & OFFERS</div>
@@ -231,9 +231,9 @@
 
 
 
-                <!-- sponsers -->
+                <!-- offers -->
 
-                
+                <!-- sponsers -->
 
                 <div id="main_div_sponsor">
                     <p class = "sponsers"><b>SPONSORS</b></p>
@@ -256,6 +256,29 @@
 
 
                 <!-- !sponsers -->
+
+
+
+                <!-- carousel -->
+
+                <div class = "container ">
+                    <h1 class = "sponsers">METTLE GALLERY</h1>
+                    <div class="slider-container"></div>
+                    <div class="slider">
+                        <div class="slide prev"><img src="c1.jpg" alt="Slide 1" /></div>
+                        <div class="slide current"><img src="c2.jpg" alt="Slide 2" /></div>
+                        <div class="slide next"><img src="c3.jpg" alt="Slide 3" /></div>
+                        <div class="slide"><img src="c4.jpg" alt="Slide 4" /></div>
+                        <div class="slide"><img src="c5.jpg" alt="Slide 5" /></div>
+                    </div>
+
+                    
+                </div>
+                </div>
+                    <div class="progress"></div>
+
+
+                    <!-- !carousel -->
 
     <!-- footer -->
 
@@ -367,6 +390,44 @@
         
         
     </script>
+
+<script>
+
+    const slides = document.querySelectorAll(".slide");
+    const indexes = document.querySelectorAll(".index");
+    const progress = document.querySelectorAll(".progress");
+    
+    const DURATION = 5000;
+    
+    // Set the index of current, prev, and next slides
+    let currentIndex = 0;
+    let nextIndex = currentIndex < slides.length - 1 ? currentIndex + 1 : 0;
+    let prevIndex = currentIndex > 0 ? currentIndex - 1 : slides.length - 1;
+    
+    const interval = setInterval(() => {
+        slides.forEach(slide => {
+            slide.classList.remove("next", "prev", "current");
+        });
+        indexes.forEach(index => {
+            index.classList.remove("current");
+        });
+    
+        indexes[currentIndex]?.classList.add("current");
+        slides[currentIndex].classList.add("current");
+        slides[nextIndex].classList.add("next");
+        slides[prevIndex].classList.add("prev");
+    
+        // Change the index of the current, next, and prev slide
+        currentIndex = (currentIndex + 1) % slides.length;
+        nextIndex = (nextIndex + 1) % slides.length;
+        prevIndex = (prevIndex + 1) % slides.length;
+    }, DURATION);
+    
+    slides[currentIndex].classList.add("current");
+    slides[prevIndex].classList.add("prev");
+    slides[nextIndex].classList.add("next");
+    indexes[currentIndex].classList.add("current");
+            </script>
 
     
 </body>
