@@ -1,8 +1,19 @@
+
 * {
     box-sizing: border-box;
     
 }
-
+@font-face {
+    font-family: femoralis;
+    src: url(/FEMORALIS-Regular.ttf);
+}
+@font-face {
+    font-family: ames;
+    src: url(./AmesRoman.ttf);
+}
+html{
+    scroll-behavior: smooth;
+}
 .box{
     background-color: #000000;
     
@@ -45,9 +56,9 @@ a {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #FCF0D1; 
-    opacity: 0; 
-    transition: all 0.25s ease-out; 
+    background-color: #FCF0D1; /* Consistent color from prompt */
+    opacity: 0; /* Start hidden */
+    transition: all 0.25s ease-out; /* Animate all properties (color, opacity, transform) */
 }
 
 /* Apply the underline and visual transition when hovered */
@@ -64,16 +75,12 @@ a {
     line-height: 20.16px;
     font-weight: 600;
 }
-/* .navbar-scrolled {
-    background-color: rgba(0, 0, 0, 0.7) !important; 
-    transition: background-color 0.3s ease-in-out;
-} */
 .navbar-scrolled {
-    background-color: rgba(0, 0, 0, 0.5) !important; 
+    background-color: rgba(0, 0, 0, 0.7) !important; 
     transition: background-color 0.3s ease-in-out;
 }
 .navbar-nav .nav-item {
-    margin-right: 10px; 
+    margin-right: 15px; 
 }
 
 .navbar-toggler-icon {
@@ -225,6 +232,21 @@ a {
     font-weight: bold;
     font-family: femoralis;
     color: transparent;
+<<<<<<< HEAD
+}
+.heading > span{
+    background: linear-gradient(180deg, #FCF6D1 0%, #BD9457 7.81%, #E3CA89 18.75%, #FEE8C8 52.34%, #4D3A1A 64.06%, #FCF0D1 75%),
+linear-gradient(360deg, #FFF0DA 16.4%, #94641E 18.71%, #FFF2DB 76.87%, #EAC885 84.96%, #FBF5D1 88.04%, #BD9A4B 89.58%, #ECD8A3 89.58%);
+
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.heading > span > .year{
+    font-family: ames;
+    font-weight: bold;
+    font-size: 1.15em;
+=======
+>>>>>>> 8f4ae71fe9d0317fdd862672372b28c03fdeaf27
 }
 .heading > span{
     background: linear-gradient(180deg, #FCF6D1 0%, #BD9457 7.81%, #E3CA89 18.75%, #FEE8C8 52.34%, #4D3A1A 64.06%, #FCF0D1 75%),
@@ -238,7 +260,6 @@ linear-gradient(360deg, #FFF0DA 16.4%, #94641E 18.71%, #FFF2DB 76.87%, #EAC885 8
     font-weight: bold;
     font-size: 1.15em;
 }
-
 .content{
     color:aliceblue;
     text-align: center;
@@ -333,6 +354,7 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin-top: 50px;
+
 }
 
 .countDownHeading{
@@ -656,7 +678,7 @@ gap: 8px;
               #top {
                 margin-top: 70px;
                 width: 100%;
-                
+                max-width: 1440px;
                 height: auto;
                 display: flex;
                 flex-direction: column;
@@ -682,7 +704,7 @@ gap: 8px;
             
             #bottom {
                 width: 100%;
-                
+                max-width: 1440px;
                 height: 62px;
                 display: flex;
                 align-items: center;
