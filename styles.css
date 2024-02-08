@@ -106,8 +106,91 @@ a {
         margin-left: auto !important;
     }
 }
+ .icon-bar {
+    position: fixed;
+    top: 50%;
+    left:97%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  /* Style the icon bar links */
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* Style the social media icons with color, if you want */
+  .icon-bar a:hover {
+    background-color: #eaedf0;
+  } */
+  .icon-bar {
+    position:fixed;
+      top: 50%;
+      left:85%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+    
+    .icon-bar a {
+      display: block;
+      text-align: center;
+      padding: 9px;
+      transition: all 0.3s ease;
+      color: white;
+      font-size: 20px;
+    }
+    @media (max-width: 767.98px) {
+        .icon-bar a {
+            padding-left: 0px !important;
+        }
 
+        .icon-bar {
+            position: fixed;
+            top: 50%;
+            left:92%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+          }
+    }
+    
+    .icon-bar a:hover {
+      background-color: #000;
+    }
+    
+    .facebook-icon img{
+        width: 25px;
+        height: 25px; 
+        border-radius: 50%;
 
+    }
+    
+.twitter-icon img
+     {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+     }
+    
+    .linkedin-icon img
+    {
+        width: 25px;
+        height: 25px; 
+        border-radius: 30%;
+    }
+    .vector-icon img{
+        width: 22px;
+        height: 22px; 
+        border-radius: 30%;
+    }
+    
 .main_heading{
     
     height:70vh;
@@ -133,12 +216,27 @@ a {
         }
       }
 
+
 .heading{
     
     color:aliceblue;
     text-align: center;
     font-family:black;
     font-weight: bold;
+    font-family: femoralis;
+    color: transparent;
+}
+.heading > span{
+    background: linear-gradient(180deg, #FCF6D1 0%, #BD9457 7.81%, #E3CA89 18.75%, #FEE8C8 52.34%, #4D3A1A 64.06%, #FCF0D1 75%),
+linear-gradient(360deg, #FFF0DA 16.4%, #94641E 18.71%, #FFF2DB 76.87%, #EAC885 84.96%, #FBF5D1 88.04%, #BD9A4B 89.58%, #ECD8A3 89.58%);
+
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.heading > span > .year{
+    font-family: ames;
+    font-weight: bold;
+    font-size: 1.15em;
 }
 
 .content{
