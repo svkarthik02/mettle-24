@@ -78,9 +78,9 @@ a {
     background-color: rgba(0, 0, 0, 0.7) !important; 
     transition: background-color 0.3s ease-in-out;
 }
-.navbar-nav .nav-item {
-    margin-right: 15px; 
-}
+/* .navbar-nav .nav-item {
+    margin-right: 4px; 
+} */
 
 .navbar-toggler-icon {
     background-color: white;
@@ -202,10 +202,15 @@ a {
     height:70vh;
     
 }
+.tempheading{
+    height:80vh;
+    width:100vw;
+}
 .mettle{
     padding-top:140px;
     padding-left:10px;
     padding-right:10px;
+    
     
 }
 .gradient{
@@ -823,7 +828,7 @@ gap: 8px;
             #workshops,
             #getintouch_footer {
                 text-align: center;
-                margin: 20px;
+                /* margin: 5px; */
             }
             
             #bottom {
