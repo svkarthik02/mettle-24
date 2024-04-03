@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+		<title>METTLE 2024</title>
+		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
+		<link href="https://db.onlinewebfonts.com/c/ab80d41fb980ff40273bb0028779b41e?family=Sequel100Black-45" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Mettle'23</title>
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="shortcut icon" href="mettlelogo.png" type="image/x-icon" />
+
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link rel="stylesheet" href="https.//unpkg.com/aos@next/dist/aos.css" />
+		<style>
+			[data-aos="new-animation"] {
+				opacity: 10;
+				transition-property: transform, opacity;
+			}
+			[data-aos="new-animation"].aos-animate {
+				opacity: 1;
+			}
+
+			@media screen and (min-width: 768px) {
+				[data-aos="new-animation"] {
+					transform: scale(1.3);
+					transition: 3s;
+				}
+				[data-aos="new-animation"].aos-animate {
+					transform: translateX(0);
+				}
+			}
+			body {
+				background-color: black !important;
+				font-family: PT Sans;
+				color: white !important;
+				width: 100% !important;
+				height: 100%;
+				margin: 0px;
+				padding: 50px;
+				overflow-x: hidden !important;
+			}
+
+			body,
+			html {
+				background-color: #000;
+				width: 100%;
+				min-height: 100%;
+				padding: 0;
+				margin: 0;
+			}
+
+			.gg {
+				display: flex;
+				justify-content: space-around;
+			}
+			@media screen and (max-width: 768px) {
+				.gg {
+					display: grid;
+					justify-content: space-evenly;
+				}
+			}
+
+			.nav-item .active {
+				background-color: #5c3317 !important;
+				/* #e53948 */
+			}
+			.nav-item .active:hover {
+				background-color: transparent !important;
+			}
+			#schedule li a {
+				display: block;
+				background-color: goldenrod;
+				font-family: myHeadingFont;
+				color: white !important;
+				text-align: center;
+				padding: 16px 16px 0 16px;
+				text-decoration: none;
+				border-radius: 50px 50px 0 0;
+			}
+			#schedule ul {
+				margin-bottom: 0px;
+			}
+			#schedule li a:hover {
+				color: #f9e8b3 !important;
+				background-color: transparent;
+				border: 2px solid #f9e8b3;
+				padding: 14px 14px 0 14px;
+			}
+		</style>
+	</head>
+	<body>
+		
+			<nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: #000;">
+				<a class="navbar-brand" href="#">
+					<img src = "mettlelogo.png" class = "logo ml-4 mt-3"/>
+				</a>
+				<button class="navbar-toggler ml-auto " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon line"></span> 
+				<span class="navbar-toggler-icon line"></span> 
+				<span class="navbar-toggler-icon line"></span> 
+				</button>
+				<div>
+					
+				</div>
+				<div class="collapse navbar-collapse" id="navbarNav">
+				  <ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+					  <a class="nav-link " href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href = "workshops.html">Workshops</a>
+					  </li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#">Events</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Schedule</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Team</a>
+					</li>
+					
+					
+				  </ul>
+				  
+				</div>
+				
+				
+				
+			  </nav>
+			  
+		<h1
+			style="
+				text-align: center;
+				font-family: myFirstFont;
+				font-size: 8vw;
+				width: 70vw;
+				margin: auto;
+				padding-top: 150px;
+				background: linear-gradient(
+						180deg,
+						#fcf6d1 0%,
+						#bd9457 7.81%,
+						#e3ca89 18.75%,
+						#fee8c8 52.34%,
+						#4d3a1a 64.06%,
+						#fcf0d1 75%
+					),
+					linear-gradient(
+						360deg,
+						#fff0da 16.4%,
+						#94641e 18.71%,
+						#fff2db 76.87%,
+						#eac885 84.96%,
+						#fbf5d1 88.04%,
+						#bd9a4b 89.58%,
+						#ecd8a3 89.58%
+					);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			"
+		>
+			SCHEDULE
+		</h1>
+		<section id="schedule" class="section-with-bg">
+			<div class="container" data-aos="fade-up">
+				<div class="schedule-dates">
+					<ul class="text-center" role="tablist">
+						<li class="nav-item" style="margin-right: 30px">
+							<a
+								class="nav-link active"
+								href="#day-1"
+								role="tab"
+								data-bs-toggle="tab"
+							>
+								05th <br />
+								<span style="font-size: 10px">FRI</span></a
+							>
+						</li>
+						<li class="nav-item" style="margin-right: 30px">
+							<a class="nav-link" href="#day-2" role="tab" data-bs-toggle="tab"
+								>06th <br /><span style="font-size: 10px">SAT</span></a
+							>
+						</li>
+						<li class="nav-item" style="margin-right: 30px">
+							<a class="nav-link" href="#day-3" role="tab" data-bs-toggle="tab"
+								>07th <br /><span style="font-size: 10px">SUN</span></a
+							>
+						</li>
+					</ul>
+				</div>
+				<div
+					class="tab-content row justify-content-center"
+					data-aos="fade-up"
+					data-aos-delay="200"
+				>
+					<!-- Schdule Day 1 -->
+					<div
+						style="
+							font-style: myFont;
+							padding: 20px;
+							/* border: 2px solid rgba(252, 176, 190, 0.6); */
+							border: 2px solid #f9e8b3;
+
+							border-radius: 16px;
+							background: linear-gradient(
+								137.74deg,
+								rgba(115, 77, 82, 0.15) 0%,
+								rgba(115, 77, 81, 0.045) 101.31%
+							);
+						"
+						role="tabpanel"
+						class="col-lg-9 tab-pane fade show active"
+						id="day-1"
+					>
+						<div class="row schedule-item" style="padding: 20px">
+							<div style="color: #f9e8b3" class="col-md-2">
+								<time>10:00 AM - 12:30 PM</time>
+							</div>
+							<div class="col-md-10">
+								<h4 style="font-family: myNavFont; font-size: 25px">
+									INAUGURATION + GL
+								</h4>
+								<p>Venue: A02 Hall</p>
+							</div>
+						</div>
+
+						<div class="row schedule-item" style="padding: 20px">
+							<div style="color: #f9e8b3" class="col-md-2">
+								<time>02:00 PM - 04:00 PM</time>
+							</div>
+							<div class="col-md-10">
+								<h4 style="font-family: myNavFont; font-size: 25px">
+									Shape Memory Alloys - Workshop
+								</h4>
+								<p>Venue: Orion</p>
+							</div>
+						</div>
+
+						<div class="row schedule-item" style="padding: 20px">
+							<div style="color: #f9e8b3" class="col-md-2">
+								<time>2:00 PM PM - 06:00 PM</time>
+							</div>
+							<div class="col-md-10">
+								<h4 style="font-family: myNavFont; font-size: 25px">
+									Exhibition
+								</h4>
+								<p>Venue: A02 Hall</p>
+							</div>
+						</div>
+
+						<div class="row schedule-item" style="padding: 20px">
+							<div style="color: #f9e8b3" class="col-md-2">
+								<time>06:30 PM - 07:30 PM</time>
+							</div>
+							<div class="col-md-10">
+								<h4 style="font-family: myNavFont; font-size: 25px">
+									Meta Spell Bee - Informals
+								</h4>
+								<p>Venue: A11 Hall</p>
+							</div>
+						</div>
+					</div>
+					<!-- End Schdule Day 1 -->
+
+					<!-- Schdule Day 2 -->
+					<div
+						style="
+							padding: 20px;
+							border: 2px solid #f9e8b3;
+							border-radius: 16px;
+							background: linear-gradient(
+								137.74deg,
+								rgba(115, 77, 82, 0.15) 0%,
+								rgba(115, 77, 81, 0.045) 101.31%
+							);
+						"
+						role="tabpanel"
+						class="col-lg-9 tab-pane fade"
+						id="day-2"
+					>
+						<div class="row schedule-item" style="padding: 20px">
+							<div style="color: #f9e8b3" class="col-md-2">
+								<time>10:00 AM - 12:30 PM</time>
+							</div>
+							<div class="col-md-10">
+								<h4 style="font-family: myNavFont; font-size: 25px">
+									3D Workshop
+								</h4>
+								<p>Venue: Seimens Center</p>
+							</div>
+						</div>
+
+						<div class="row schedule-item" style="padding: 20px">
+							<div style="color: #f9e8b3" class="col-md-2">
+								<time>12:30 PM - 04:30 PM</time>
+							</div>
+							<div class="col-md-10">
+								<h4 style="font-family: myNavFont; font-size: 25px">
+									Material Informatics - Workshop
+								</h4>
+								<p>Venue: Orion G1/G2</p>
+							</div>
+						</div>
+
+						<div class="row schedule-item" style="padding: 20px">
+							<div style="color: #f9e8b3" class="col-md-2">
+								<time>04:30 PM - 06:45 PM</time>
+							</div>
+							<div class="col-md-10">
+								<h4 style="font-family: myNavFont; font-size: 25px">What If</h4>
+								<p>Venue: Orion G3</p>
+							</div>
+						</div>
+
+						<div class="row schedule-item" style="padding: 20px">
+							<div style="color: #f9e8b3" class="col-md-2">
+								<time>06:45 PM - 07:30 PM</time>
+							</div>
+							<div class="col-md-10">
+								<h4 style="font-family: myNavFont; font-size: 25px">
+									Quintuples - Informals
+								</h4>
+								<p>Venue: A11 Hall</p>
+							</div>
+						</div>
+					</div>
+					<!-- End Schdule Day 2 -->
+
+					<!-- Schdule Day 3 -->
+					<div
+						style="
+							padding: 20px;
+							border: 2px solid #f9e8b3;
+							border-radius: 16px;
+							background: linear-gradient(
+								137.74deg,
+								rgba(115, 77, 82, 0.15) 0%,
+								rgba(115, 77, 81, 0.045) 101.31%
+							);
+						"
+						role="tabpanel"
+						class="col-lg-9 tab-pane fade"
+						id="day-3"
+					>
+						<div class="row schedule-item" style="padding: 20px">
+							<div style="color: #f9e8b3" class="col-md-2">
+								<time>09:30 AM - 10:45 AM</time>
+							</div>
+							<div class="col-md-10">
+								<h4 style="font-family: myNavFont; font-size: 25px">
+									Metal Mania - Round 2
+								</h4>
+								<p>Venue: Orion G3</p>
+							</div>
+						</div>
+
+						<div class="row schedule-item" style="padding: 20px">
+							<div style="color: #f9e8b3" class="col-md-2">
+								<time>09:30 AM - 10:45 AM</time>
+							</div>
+							<div class="col-md-10">
+								<h4 style="font-family: myNavFont; font-size: 25px">
+									Industrial GL
+								</h4>
+								<p>Venue: A13 Hall</p>
+							</div>
+						</div>
+
+						<div class="row schedule-item" style="padding: 20px">
+							<div style="color: #f9e8b3" class="col-md-2">
+								<time>10:45 AM - 01:45 PM</time>
+							</div>
+							<div class="col-md-10">
+								<h4 style="font-family: myNavFont; font-size: 25px">
+									Ace the Case
+								</h4>
+								<p>Venue: A11 Hall</p>
+							</div>
+						</div>
+
+						<div class="row schedule-item" style="padding: 20px">
+							<div style="color: #f9e8b3" class="col-md-2">
+								<time>03:00 PM - 05:00 PM</time>
+							</div>
+							<div class="col-md-10">
+								<h4 style="font-family: myNavFont; font-size: 25px">
+									NDT - Workshop
+								</h4>
+								<p>Venue: A02 Hall</p>
+							</div>
+						</div>
+						<div class="row schedule-item" style="padding: 20px">
+							<div style="color: #f9e8b3" class="col-md-2">
+								<time>05:00 PM - 07:00 PM</time>
+							</div>
+							<div class="col-md-10">
+								<h4 style="font-family: myNavFont; font-size: 25px">
+									DJ night
+								</h4>
+								<p>Venue: Barn Hall</p>
+							</div>
+						</div>
+					</div>
+					<!-- End Schdule Day 3 -->
+				</div>
+			</div>
+		</section>
+		<!-- End Schedule Section -->
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	<div class="progress"></div>
+	<div id="footer">
+		<div class="bg-image">
+		<div id="top">
+				
+			
+			<div id="home_footer">
+				<b id="bold_c">Home</b><br><br>
+				Mettle'23<br><br>
+				Brochure<br><br>
+				Combo offers<br><br>
+				Etc
+			</div>
+			<div id="events_footer">
+				<b id="bold_c">Events</b><br><br>
+				Event1<br><br>
+				Event2<br><br>
+				Event3<br><br>
+				Event4<br><br>
+			</div>
+			<div id="workshops">
+				<b id="bold_c">Workshops</b><br><br>
+				Workshop1<br><br>
+				Workshop2<br><br>
+				Workshop3<br><br>
+				Workshop4<br><br>
+			</div>
+			<div id="getintouch_footer">
+				<b id="bold_c">Get in touch</b><br><br>
+				<input type="text" placeholder="Enter your email" id="sign_input"><button id="signin_input">SIGN IN</button><br><br>
+				<p id="input_text">You'll find your next marketing value you prefer.</p><br>
+				<img src="facebook.png" id="facebook">
+				<img src="twitter-logo.png" id="twitter">
+				<img src="linkedin.png" id="linkedin">
+			</div>
+		</div>
+	</div>
+	</div>
+		<div id="bottom"><b id="bottom_black">Copyright 2024 Mettle | All rights reserved.</b></div>
+	</div>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+			crossorigin="anonymous"
+		></script>
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		/>
+
+		<link
+			href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+			rel="stylesheet"
+		/>
+
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init({
+				duration: 1000,
+			});
+		</script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+			integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
