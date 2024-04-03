@@ -2,15 +2,20 @@
     box-sizing: border-box;
     
 }
+@font-face {
+    font-family: femoralis;
+    src: url(/FEMORALIS-Regular.ttf);
+}
+@font-face {
+    font-family: ames;
+    src: url(./AmesRoman.ttf);
+}
 html{
     scroll-behavior: smooth;
 }
-body {
-    overflow-x: hidden; /* Hides horizontal scrollbar */
-}
-
 .box{
     background-color: #000000;
+    
     padding-top: 50px;
     
 }
@@ -73,9 +78,9 @@ a {
     background-color: rgba(0, 0, 0, 0.7) !important; 
     transition: background-color 0.3s ease-in-out;
 }
-.navbar-nav .nav-item {
-    margin-right: 15px; 
-}
+/* .navbar-nav .nav-item {
+    margin-right: 4px; 
+} */
 
 .navbar-toggler-icon {
     background-color: white;
@@ -101,6 +106,11 @@ a {
     transform: rotate(-45deg) translate(8px, -7px); 
 }
 
+
+@media (max-width: 767.98px) {
+    .ml-auto {
+        margin-left: auto !important;
+    }
 }
 
 .logo{
@@ -155,7 +165,7 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin-top: 50px;
-    background: radial-gradient(circle, #5A3C0F 0%, #000000 100%);
+    /* background: radial-gradient(circle, #5A3C0F 0%, #000000 100%); */
 
 
 }

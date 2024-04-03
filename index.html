@@ -15,7 +15,7 @@
 <body>
     <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: #000;">
         <a class="navbar-brand" href="#">
-            <img src = "mettlelogo.png" class = "logo ml-4 mt-3"/>
+            <img src = "afeg@3x.png" class = "logo ml-3 mt-2"/>
         </a>
         <button class="navbar-toggler ml-auto " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon line"></span> 
@@ -45,7 +45,6 @@
             <li class="nav-item">
                 <a class="nav-link" href="#">Team</a>
             </li>
-            
             
           </ul>
           
@@ -295,8 +294,8 @@
                 
             
             <div id="home_footer">
-                <b id="bold_c">Home</b><br><br>
-                Mettle'23<br><br>
+                <a href = "index.html"><b id="bold_c">Home</b></a><br><br>
+                <a href = "index.html">Mettle'24</a><br><br>
                 Brochure<br><br>
                 Combo offers<br><br>
                 Etc
@@ -309,17 +308,19 @@
                 Event4<br><br>
             </div>
             <div id="workshops">
-                <b id="bold_c">Workshops</b><br><br>
-                Workshop1<br><br>
-                Workshop2<br><br>
-                Workshop3<br><br>
-                Workshop4<br><br>
+                <a id="bold_c" href = "workshops.html" style = "font-weight: bold;">Workshops</a><br><br>
+                <!-- <b id="bold_c">Workshops</b> -->
+                Shape Memory Alloys<br><br>
+                3D Printing<br><br>
+                Non-Destructive Testing<br><br>
+                Magnetorheological Fluid<br><br>
             </div>
             <div id="getintouch_footer">
                 <b id="bold_c">Get in touch</b><br><br>
                 <input type="text" placeholder="Enter your email" id="sign_input"><button id="signin_input">SIGN IN</button><br><br>
                 <p id="input_text">You'll find your next marketing value you prefer.</p><br>
-                <img src="facebook.png" id="facebook">
+                <a href = "https://www.facebook.com/nitt.mettle/" target="_blank"><img src="facebook.png" id="facebook"></a>
+                <!-- <a href="https://www.facebook.com/nitt.mettle/" target="_blank" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a> -->
                 <img src="twitter-logo.png" id="twitter">
                 <img src="linkedin.png" id="linkedin">
             </div>
@@ -349,7 +350,7 @@
 
         //count down time
 
-        var countDownDate = new Date("Mar 1, 2024 00:00:00").getTime();
+        var countDownDate = new Date("Apr 5, 2024 00:00:00").getTime();
 			
 			// Update the count down every 1 second
 			var x = setInterval(function() {
