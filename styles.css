@@ -716,7 +716,7 @@ gap: 8px;
         }
                     .slider {
                         flex: 1;
-                        width: 70%; /* Changed width from 100% to 50% */
+                        width: 90%; /* Changed width from 100% to 50% */
                         margin: auto; /* Center the slider horizontally */
                         overflow: hidden;
                         position: relative;
@@ -730,7 +730,7 @@ gap: 8px;
                         width: 100px;
                         aspect-ratio: 1.5;
                         min-width: 50%;
-                        max-height: 80%;
+                        max-height: 90%;
                         border-radius: 1.2vmin;
         
                         overflow: hidden;
@@ -875,7 +875,7 @@ gap: 8px;
                 #top {
                     flex-direction: row;
                 }
-            
+                
                 #home_footer,
                 #events_footer,
                 #workshops,
