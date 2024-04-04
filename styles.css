@@ -202,15 +202,24 @@ a {
     height:70vh;
     
 }
-.tempheading{
-    height:80vh;
-    width:100vw;
-}
 .mettle{
-    padding-top:140px;
+    padding-top:100px;
     padding-left:10px;
     padding-right:10px;
     
+}
+.mettle_heading{
+    font-size: 30px;
+    text-align: center;
+    font-family: "Bolde", Arial, sans-serif; /* Specify the Bolde font */
+    font-weight: 400;
+    line-height: 96px;
+    letter-spacing: 0em;
+    background: linear-gradient(0deg, #FFF0DA 1.04%, #94641E 4.17%, #FFF2DB 82.81%, #EAC885 93.75%, #FBF5D1 97.92%, #BD9A4B 99.99%, #ECD8A3 100%),
+    linear-gradient(0deg, #000000, #000000);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
     
 }
 .gradient{
@@ -221,7 +230,7 @@ a {
     @media only screen and (max-width: 600px) {
         .box{
             background-color: #000000;
-            height:100vh;
+            height:80vh;
             padding-top: 50px;
             
         }
@@ -237,46 +246,26 @@ a {
     
     color:aliceblue;
     text-align: center;
-    font-family:black;
-    font-size: 96px;
-    font-weight: 400;
+    font-family: "Bolde", Arial, sans-serif;
+    font-size: 180px;
+    
+    font-weight: 600;
     line-height: 96px;
     letter-spacing: 0em;
 
     /* font-family: femoralis; */
     color: transparent;
-<<<<<<< HEAD
 }
+
+
 .heading > span{
-    background: linear-gradient(180deg, #FCF6D1 0%, #BD9457 7.81%, #E3CA89 18.75%, #FEE8C8 52.34%, #4D3A1A 64.06%, #FCF0D1 75%),
-linear-gradient(360deg, #FFF0DA 16.4%, #94641E 18.71%, #FFF2DB 76.87%, #EAC885 84.96%, #FBF5D1 88.04%, #BD9A4B 89.58%, #ECD8A3 89.58%);
+    background: linear-gradient(0deg, #FFF0DA 1.04%, #94641E 4.17%, #FFF2DB 82.81%, #EAC885 93.75%, #FBF5D1 97.92%, #BD9A4B 99.99%, #ECD8A3 100%);
+
 
     -webkit-background-clip: text;
     background-clip: text;
 }
-.heading > span > .year{
-    font-family: ames;
-    
-    font-weight: bold;
-    font-size: 1.15em;
-=======
->>>>>>> 8f4ae71fe9d0317fdd862672372b28c03fdeaf27
-}
-.heading > span{
-    background: linear-gradient(180deg, #FCF6D1 0%, #BD9457 7.81%, #E3CA89 18.75%, #FEE8C8 52.34%, #4D3A1A 64.06%, #FCF0D1 75%),
-linear-gradient(360deg, #FFF0DA 16.4%, #94641E 18.71%, #FFF2DB 76.87%, #EAC885 84.96%, #FBF5D1 88.04%, #BD9A4B 89.58%, #ECD8A3 89.58%);
 
-    -webkit-background-clip: text;
-    background-clip: text;
-}
-.heading > span > .year{
-    /* font-family: ames; */
-    font-family:black;
-    font-size: 96px;
-    font-weight: 400;
-    line-height: 96px;
-    letter-spacing: 0em;
-}
 .content{
     color:aliceblue;
     text-align: center;
@@ -290,6 +279,22 @@ linear-gradient(360deg, #FFF0DA 16.4%, #94641E 18.71%, #FFF2DB 76.87%, #EAC885 8
     /* font-size:20px; */
     
 }
+@media only screen and (max-width: 600px) {
+    .main_heading {
+        height: auto; /* Allow height to adjust based on content */
+        padding-top: 20px; /* Adjusted padding for smaller screens */
+    }
+    .heading{
+        font-size: 90px;
+    }
+    .mettle_heading {
+        font-size: 16px; /* Further reduced font size for smaller screens */
+        line-height: 24px; /* Further reduced line height for smaller screens */
+    }
+    .content{
+        font-size: 15px;
+    }
+}
 
 .logo{
     height:90px;
@@ -302,7 +307,7 @@ linear-gradient(360deg, #FFF0DA 16.4%, #94641E 18.71%, #FFF2DB 76.87%, #EAC885 8
     margin-top:10px;
 }
 .explore{
-    margin-top:8px;
+    margin-top:10px;
 }
 
 
@@ -382,10 +387,11 @@ body {
 }
 
 .countDownHeading{
-    margin-top:10%;
+    margin-top:8%;
     margin-bottom: 0%;
 font-family: Outfit;
-  font-size: 80px;
+
+  font-size: 70px;
   font-weight: 600;
   width:100%;
   line-height: 82px;
@@ -544,8 +550,8 @@ gap: 8px;
                   display: flex;
                   flex-direction: column; 
                   position: relative;
-          overflow: hidden;
-          margin: 20px;
+                    overflow: hidden;
+                    margin: 20px;
               }
   
               .content {
@@ -706,18 +712,22 @@ gap: 8px;
                 background-color: black;
                 display: flex;
                 flex-direction: column;
-                margin-top:30px;
+                margin-top:0px;
             }
                 
         .slider-container {
             display: flex;
             flex-direction: column;
-            /* Other styles for your predefined content */
+            height:7vh;
+            margin-top: 3px;
         }
                     .slider {
+                        /* margin-top: 0%; */
+                        
                         flex: 1;
-                        width: 90%; /* Changed width from 100% to 50% */
-                        margin: auto; /* Center the slider horizontally */
+                        width: 60%; /* Changed width from 100% to 50% */
+                        
+                        margin:0 auto; /* Center the slider horizontally */
                         overflow: hidden;
                         position: relative;
                         display: flex;
@@ -782,7 +792,7 @@ gap: 8px;
                     .timeline img {
                         width: 100%;
                         height: 100%;
-                        object-fit: cover;
+                        /* object-fit: cover; */
                         object-position: center;
                     }
                     .timeline .index.current {
@@ -806,7 +816,7 @@ gap: 8px;
               /* footer css */
 
               #top {
-                margin-top: 15px;
+                margin-top: 0px;
                 width: 100%;
                 height: auto;
                 display: flex;
