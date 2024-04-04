@@ -733,6 +733,7 @@ gap: 8px;
                         display: flex;
                         justify-content: center; /* Center the slides horizontally */
                         align-items: center; /* Center the slides vertically */
+                        
                     }
         
                     .slide {
@@ -755,7 +756,7 @@ gap: 8px;
                     .slide img {
                         width: 100%;
                         height: 100%;
-                        object-fit: cover;
+                        object-fit: contain;
                         object-position: center;
                     }
                     .slide.current {
