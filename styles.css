@@ -567,6 +567,7 @@ gap: 8px;
                   max-height: 150px; 
                   border-radius: 16px;
                   object-fit: cover;
+                  
               }
   
               .card-content {
@@ -687,19 +688,20 @@ gap: 8px;
                 align-items: center;
             }
             
-            @media screen and (min-width: 600px) {
-                #grid12 {
-                    grid-template-columns: repeat(2, 1fr); 
-                    grid-template-rows: repeat(2, 1fr); 
-                }
-            }
             
-            @media screen and (min-width: 900px) {
-                #grid12 {
-                    grid-template-columns: repeat(4, 1fr); 
-                    grid-template-rows: repeat(3, 1fr); 
-                }
+        @media screen and (min-width: 600px) {
+            #grid12 {
+                grid-template-columns: repeat(2, 1fr); 
+                grid-template-rows: repeat(4, 1fr); 
             }
+        }
+
+        @media screen and (min-width: 900px) {
+            #grid12 {
+                grid-template-columns: repeat(4, 1fr); 
+                grid-template-rows: repeat(2, 1fr); 
+            }
+        }
 
             /* !sponsers css */
 
@@ -725,7 +727,7 @@ gap: 8px;
                         /* margin-top: 0%; */
                         
                         flex: 1;
-                        width: 65%; /* Changed width from 100% to 50% */
+                        width: 70%; /* Changed width from 100% to 50% */
                         
                         margin:0 auto; /* Center the slider horizontally */
                         overflow: hidden;
@@ -754,7 +756,7 @@ gap: 8px;
                         left: 50%;
                         transform: translate(-50%, -50%) scale(0);
                         transition-property: opacity, inset, transform;
-                        transition-duration: 0.5s;
+                        transition-duration: 0.2s;
                         opacity: 0;
                     }
                     .slide img {
